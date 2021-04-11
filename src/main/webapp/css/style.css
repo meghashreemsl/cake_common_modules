@@ -1,0 +1,78 @@
+*{
+	margin:0;
+	/*padding:0;*/
+	font-family:Century Gothic;
+}
+.h_style
+{
+	background-color: seashell;
+	color:#096159;
+	padding:60px;
+	padding-top:0;
+	padding-right:0;
+	padding-left:0;
+}
+.f_style {
+margin-top: 200px;
+ font-size: 20px; 
+ color: black; 
+ background-color: seashell; 
+ padding: 40px;
+ padding-right: 0px;
+ padding-bottom:0px;
+}
+
+.megha{
+	background-image:url('cake1.jpg');
+   /* background-attachment:fixed;*/
+    background-position:center;
+    background-size:cover;
+    height: 100vh;
+}
+.formstyle{
+	font-size:30px;
+	color:white;
+}
+.btn {
+  border: none;
+  color: #1b1919;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight:bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.table_style1{
+	margin-left: auto; margin-right: auto;
+	font-size:22px;
+	
+}
+/*
+.anch{
+	font-size:22px;
+}*/
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top:25px;
+	
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	font-size:22px;
+	color:#096159;
+	padding: 5px 20px;
+	border:1px solid #096159;
+}
+ul li a:hover{
+	background-color: white;
+	color:black;
+}

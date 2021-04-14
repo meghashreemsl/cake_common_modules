@@ -13,6 +13,4 @@ public class UpdateDTO {
 	private String dob;
 	private String gender;
 	
-	
-	
 }

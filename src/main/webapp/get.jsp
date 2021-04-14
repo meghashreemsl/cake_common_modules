@@ -7,8 +7,17 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/validations.js"></script>
+<script type = "text/javascript" >
+	function preventBack() {
+		window.history.forward();
+	}  
+	setTimeout("preventBack()", 0);  
+	window.onunload = function () {
+		null
+		};  
+	</script>
 </head>
-<body class="megha"
+<body class="megha" onload="preventBack()"
 	style="background-image: url('cake1.jpg'); height: 100vh; background-position: center; background-size: cover;">
 	<div class="h_style" style="padding: 30px;">
 		<label style="font-size: 30px;">Cake Shop</label>

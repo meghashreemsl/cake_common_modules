@@ -25,8 +25,12 @@ public class LoginController {
 	public String Login(@ModelAttribute LoginDTO loginDTO, HttpServletRequest req) {
 		logger.info("inside login controller");
 		String msg= loginService.ValidateAndLogin(loginDTO);
+		if(msg.equals("user already exists" )||msg.contentEquals("password is incorrect") || msg.equals("login entity is null")) {
+			return "login.jsp";
+		}
+		else{
 		req.setAttribute("msg", msg);
 		return "final.jsp";
-		
+		}
 	}
 }

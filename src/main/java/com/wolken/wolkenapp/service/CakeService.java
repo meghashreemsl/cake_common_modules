@@ -6,6 +6,5 @@ import com.wolken.wolkenapp.exception.MyException;
 public interface CakeService {
 	
 	public String validateAndSave(CakeDTO cakeDTO) throws MyException;
-    
-
+   
 }

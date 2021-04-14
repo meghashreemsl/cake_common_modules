@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/validations.js"></script>
 
+
 </head>
 <body class="megha" style="background-image:url('cake1.jpg');height: 100vh;background-position:center; background-size: cover; " >
 
@@ -19,13 +20,13 @@
 		<label style="font-size:30px;">Cake Shop</label>
 		<ul>
 			<li><a  href="get.jsp">get</a></li>
-			<li><a  href="update1.jsp">update</a></li>
+			<li><a  href="update.jsp">update</a></li>
 			<li><a   href="productadd.jsp">Add product</a></li>
 			<li><a  href="login.jsp">Login</a> <!-- <input class="btn" type="button" value="logout" style="margin-left:90%;" > --><li>
 		</ul>
 	</div>
 
-	<form name="meg" action="cake.do" onsubmit="return validate()"class="" method="post">
+	<form name="meg" action="cake.do" onsubmit="return validate()" onclick="preventBack()" class="" method="post">
 		<table class="table_style" style="margin-left: auto; margin-right: auto;">
 			<tr>
 				<td align="right"><label style="color: white; font-size: 25px;">Id:</label></td>

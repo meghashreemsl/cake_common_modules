@@ -28,5 +28,6 @@ public class CakeController {
 		String msg= cakeService.validateAndSave(cakeDTO);
 		req.setAttribute("msg", msg);
 		return "login.jsp";
+	   
 	}
 }

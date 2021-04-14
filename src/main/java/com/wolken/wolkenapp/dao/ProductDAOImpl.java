@@ -37,13 +37,14 @@ Logger logger = Logger.getLogger("ProductDAOImpl");
 		SessionFactory factory = bean.getObject();
 		Session session = factory.openSession();
 		Transaction transaction = session.beginTransaction();                                        
-		Query query = session.createQuery("select pe from ProductEntity pe where pe.p_cakeName= :pcname");
+		Query query = session.createQuery(" from ProductEntity pe where pe.p_cakeName= :pcname");
 		query.setParameter("pcname", p_cakeName);
 		List<ProductEntity> productEntity = query.list();
-		productEntity.forEach(System.out::print);	
-		query.executeUpdate();
-		transaction.commit();
-		session.close();
+		//productEntity.forEach(System.out::print);	
+		//query.executeUpdate();
+		logger.info("details by cake name ");
+		//transaction.commit();
+		//session.close();
 		return  productEntity;
 		
 	}

@@ -1,5 +1,5 @@
 function validate() {
-
+	
 	var userNam = document.forms["meg"]["userName"].value;
 	// var userNam = document.forms["meg"]["userName"].value;
 	// var userNam = document.f1.userName.value;
@@ -122,4 +122,14 @@ function validate() {
 			status = true;
 		}
 	return status;
+	/*<script type = "text/javascript" >*/
+	function preventBack() {
+		window.history.forward();
+	}  
+	setTimeout("preventBack()", 0);  
+	window.onunload = function () {
+		null
+		};  
+	/*</script>*/
 }
+
